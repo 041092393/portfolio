@@ -1,3 +1,33 @@
+
+
+
+nav{
+    padding: 100px !important;
+    height: 500px;
+}
+
+
+.card-title{
+    font-size: 12vw !important;
+}
+.about-title{
+    border-bottom: #2F2A27 2px solid;
+    text-align: center;
+}
+
+.star{
+    width: 25%;
+    place-self: center;
+}
+
+
+
+
+
+.footer-icon{
+aspect-ratio: 1;
+width: 50px;
+}
 :root {
     --bs-primary: #A06C82;
     --bs-secondary: #F9F8DC;
@@ -17,7 +47,14 @@
     --bs-link-color-rgb: 118, 61, 101;
     --bs-bg-dark: #2F2A27;
 }
+@font-face { 
+    font-family: 'DreamerBold';
+    src: url('fonts/DreamerBold.ttf') format('truetype');
+}
 
+.navbar-brand {
+    padding-left: 2%;
+}
 .active { 
     color: #624966;
 }
@@ -40,7 +77,7 @@ body {
 .card-img-overlay {
     position:absolute;
     top: 0;
-    left; 0; 
+    left: 0; 
     width: 100%;
     height: 100%;
     opacity: 60%;
@@ -56,6 +93,27 @@ body {
     width: 80%;
     position: absolute;
 }
+.footer {
+    padding-top: .5em;
+    padding-bottom: .2em;
+}
+
+.text-center {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 5%;
+}
 
 
+@include media-breakpoint-up(sm) { 
+    h2{
+    font-size: 1em;
+    }
+}
+h2, h3{ 
+    font-family: dreamer;
+}
+.copywrite {
+    padding-left: 5%;
+}
 
