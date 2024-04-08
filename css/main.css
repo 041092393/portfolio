@@ -1,10 +1,12 @@
 
+
 .card-title{
     font-size: 12vw !important;
 }
 .about-title{
-    border-bottom: #2F2A27 2px solid;
     text-align: center;
+    display: inline;
+    align-self: flex-end;
 }
 
 .star{
@@ -12,14 +14,27 @@
     place-self: center;
 }
 
+.p-content {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.banner-img{
+    object-fit: cover;
+}
 
 
 
 
 .footer-icon{
-aspect-ratio: 1;
+object-fit: cover;
 width: 50px;
 }
+
+.youtube{
+height: 50px;
+}
+
 :root {
     --bs-primary: #A06C82;
     --bs-secondary: #F9F8DC;
@@ -50,12 +65,25 @@ width: 50px;
 .active { 
     color: #624966;
 }
+html{
+    min-height: 100vh;
+}
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "futura-pt", sans-serif;
     font-weight: 400;
     font-style: normal;
+    height: 100vh;
+    background-color: lightgrey;
 }
+
+.about{
+    flex-grow: 1;
+}
+
+
 
 .card-title {
     font-weight: 900;
@@ -107,5 +135,24 @@ h2, h3{
 }
 .copywrite {
     padding-left: 5%;
+    display: grid;
+}
+.copywrite p{
+margin: 0;
+align-self: center;
 }
 
+#contact-us{ 
+ border-radius: 50px;
+ background-color:#2F2A27;
+ margin: 10%;
+}
+
+#contact-us > a { 
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: "mrs-eaves-roman-all-small-ca", serif;
+    font-weight: 400;
+    font-style: normal;
+}
