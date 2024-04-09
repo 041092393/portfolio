@@ -35,11 +35,8 @@ height: 40px;
 
 }
 
-:root {
-    --bs-primary: #CFB3BF;
-    --bs-secondary: #F9F8DC;
-    --bs-primary-rgb: 160,108, 130;
-    --bs-secondary-rgb: 253, 255, 132;
+:root {    
+    --bs-primary-rgb: 207,179, 191;
     --bs-primary-text-emphasis: #624966;
     --bs-bg-dark: #2F2A27;
 }
@@ -82,7 +79,9 @@ body {
     flex-grow: 1;
 }
 
-
+.card-text {
+    font-size: larger;
+}
 
 .card-title {
     font-weight: 900;
