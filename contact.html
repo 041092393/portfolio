@@ -15,45 +15,50 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img width="200" src="images/logotype.png"></a>
+      <a class="navbar-brand" href="index.html"><img width="200" src="images/logotype.png"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse d-flex flex-column flex-lg-row justify-content-end " id="navbarNavAltMarkup">
         <div class="navbar-nav gap-4 text-center pb-0">
-          <a class="nav-link active text-primary-emphasis" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="about.html">About</a>
           <a class="nav-link" href="portfolio.html">Portfolio</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link active text-primary-emphasis" aria-current="page" href="contact.html">Contact</a>
         </div>
-        <a class="navbar-brand " href="#"><img  width="80" src="images/bird.png"></a>
+        <a class="navbar-brand " href="index.html"><img  width="80" src="images/bird.png"></a>
       </div>
     </div>
   </nav>
-  <div class="row g-0">
-    <div class="card text-bg-dark">
-      <img src="images/TORIBELL.jpg" class="card-img" alt="image of tori bell facial cleanser">
-      <div class="card-img-overlay">
-        <h5 class="card-title">Luxuriously Edgy Branding</h5>
-        <div class="text-container">
-          <p class="card-text">"Ready to make your online presence stand out with stunning visuals and seamless
-            functionality? Let's collaborate to elevate your brand identity and create a website that captivates your
-            audience. Whether you need compelling branding or a user-friendly website, I'm here to bring your vision to
-            life. Get in touch today, and let's craft something extraordinary together."</p>
-        </div>
+  <div class="form flex-grow-1 m-2 m-md-5 ">
+    <div class="heading d-flex justify-content-center">
+      <img src="images/star.svg" alt="star" width="8%" class="align-self-center">
+    <h2 class="title">Contact Us</h2>
+    <img src="images/star.svg" alt="star" width="8%" class="align-self-center">
+  </div>
+    <form class=" d-flex flex-column gap-2">
+      <div class="mb-3 mx-md-5">
+        <label for="fullname" class="form-label">Full Name</label>
+        <input width="75%" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        
+      </div>
+      <div class="mb-3  mx-md-5">
+        <label for="exampleInputEmail1" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3  mx-md-5">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="subject">
+      </div>
+      <div class="mb-3  mx-md-5">
+        <label for="message" class="form-label">Message</label>
+        <textarea rows="10" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="message"></textarea>
+      </div>
+      <button class="align-self-center" id="form-contact-us" type="submit" >Submit</button>
+    </form>
 
-      </div>
-    </div>
-    <div class="text-center" style="width: 100%;">
-      <h2 class="display-2 p-5">Customer Testimonial</h2>
-      <div class="d-flex align-items-center">
-        <img src="images/star.svg" alt="black star" style="width: 25%;">
-        <p class="testimonial">"Mode Design Solutions delivered beyond our expectations! Their team translated our
-          vision into a stunning brand identity and website. Professional, creative, and attentive throughout the
-          process. Highly recommended!"</p>
-        <img src="images/star.svg" alt="black star" style="width: 25%;">
-      </div>
-    </div>
+
+  </div>
     <footer>
       <div class="row bg-dark text-white align-middle footer">
         <div class="copywrite col-8">
