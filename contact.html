@@ -14,9 +14,14 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-primary" role="navigation">
+  <ul class="skip-links">
+    <li><a href="#navigation">Skip to main nav</a></li>
+    <li><a href="#form">Skip to form</a></li>
+    <li><a href="#footer">Skip to footer</a></li>
+  </ul>
+  <nav class="navbar navbar-expand-lg bg-primary" id="navigation" role="navigation">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img width="200" src="images/logotype.png"></a>
+      <a class="navbar-brand" href="index.html"><img width="200" src="images/logotype.png" alt="mode graphic design solutions logo type"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,26 +31,26 @@
           <a class="nav-link align-self-center" href="about.html">About</a>
           <a class="nav-link align-self-center" href="portfolio.html">Portfolio</a>
           <a class="nav-link align-self-center active text-primary-emphasis" aria-current="page" href="contact.html">Contact</a>
-          <a class="navbar-brand" href="index.html"><img  width="80" src="images/bird.png"></a>
+          <a class="navbar-brand" href="index.html"><img  width="80" src="images/bird.png" alt="logo bird"></a>
         </div>
       </div>
     </div>
   </nav>
-  <div class="form flex-grow-1 m-2 m-md-5 ">
+  <div class="form flex-grow-1 m-2 m-md-5" id="form">
     <div class="heading d-flex justify-content-center">
       <img src="images/star.svg" alt="star" width="8%" class="align-self-center">
-    <h2 class="title display-2" role="heading">Contact Us</h2>
+    <h1 class="title display-2" role="heading">Contact Us</h1>
     <img src="images/star.svg" alt="star" width="8%" class="align-self-center">
   </div>
     <form class=" d-flex flex-column gap-2" aria-label="contact information">
       <div class="mb-3 mx-md-5">
         <label for="fullname" class="form-label">Full Name</label>
-        <input width="75%" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input width="75%" type="text" class="form-control" id="fullname" >
         
       </div>
       <div class="mb-3  mx-md-5">
         <label for="exampleInputEmail1" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <input type="email" class="form-control" id="exampleInputEmail1" >
       </div>
       <div class="mb-3  mx-md-5">
         <label for="subject" class="form-label">Subject</label>
@@ -60,10 +65,10 @@
 
 
   </div>
-  <footer>
-    <div class="row bg-dark text-white align-middle footer" role="contentinfo">
+  <footer id="footer">
+    <div class="row bg-dark text-white align-middle footer g-0" role="contentinfo">
       <div class="copywrite col-8">
-        <p aria-label="copywrite information">© Copywrite 2024</p>
+        <p>© Copywrite 2024</p>
       </div>
       <div class="col-4">
         <div class="d-flex gap-4 justify-content-end">

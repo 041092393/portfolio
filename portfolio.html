@@ -14,9 +14,14 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-primary" role="navigation">
+  <ul class="skip-links">
+    <li><a href="#navigation">Skip to main nav</a></li>
+    <li><a href="#">Skip to form</a></li>
+    <li><a href="#footer">Skip to footer</a></li>
+  </ul>
+  <nav class="navbar navbar-expand-lg bg-primary" id="navigation" role="navigation">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img width="200" src="images/logotype.png"></a>
+      <a class="navbar-brand" href="index.html"><img width="200" src="images/logotype.png" alt="mode graphic design solutions logo type"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -26,36 +31,42 @@
           <a class="nav-link align-self-center" href="about.html">About</a>
           <a class="nav-link align-self-center active text-primary-emphasis" aria-current="page" href="portfolio.html">Portfolio</a>
           <a class="nav-link align-self-center" href="contact.html">Contact</a>
-          <a class="navbar-brand" href="index.html"><img  width="80" src="images/bird.png"></a>
+          <a class="navbar-brand" href="index.html"><img  width="80" src="images/bird.png" alt="logo bird"></a>
         </div>
       </div>
     </div>
   </nav>
-  <div class=" portfolio">
-    <h2 class="display-2 text-center" role="heading">Portfolio</h2>
+  <div class="portfolio">
+    <h1 class="display-2 text-center" role="heading">Portfolio</h1>
     <div class="portfolio-images "> 
       <picture>
         <source srcset="images/tori-bell-square-sm.jpg" media="(max-width: 768px)"/>
+        <source srcset="images/tori-bell-square.jpg" media="(min-width: 768px)"/>
         <img src="images/tori-bell-square.jpg" alt="tori bell packaging">
       </picture>
       <picture>
         <source srcset="images/stationary-square-sm.jpg" media="(max-width: 768px)"/>
+        <source srcset="images/stationary-square.jpg" media="(min-width: 768px)"/>
         <img src="images/stationary-square.jpg" alt="example of stationary set">
       </picture>
       <picture>
         <source srcset="images/poster-square-sm.jpg" media="(max-width: 768px)"/>
+        <source srcset="images/poster-square.jpg" media="(min-width: 768px)"/>
         <img src="images/poster-square.jpg" alt="vampire movie poster">
       </picture>
       <picture>
         <source srcset="images/jack-daniels-square-sm.jpg" media="(max-width: 768px)"/>
+        <source srcset="images/jack-daniels-square.jpg" media="(min-width: 768px)"/>
         <img src="images/jack-daniels-square.jpg" alt="jack daniels packaging">
       </picture>
       <picture>
         <source srcset="images/mountain-trail-square-sm.jpg" media="(max-width: 768px)"/>
+        <source srcset="images/mountain-trail-square.jpg" media="(min-width: 768px)"/>
         <img src="images/mountain-trail-square.jpg" alt="mountain trail peanut buddy bars packaging">
       </picture>
       <picture>
         <source srcset="images/a01-square-sm.jpg" media="(max-width: 768px)"/>
+        <source srcset="images/a01-square.jpg" media="(min-width: 768px)"/>
         <img src="images/a01-square.jpg" alt="haunted tales and tiny shadows logo">
       </picture>
   </div>
@@ -65,9 +76,9 @@
 
 
     <footer>
-      <div class="row bg-dark text-white align-middle footer" role="contentinfo">
+      <div class="row bg-dark text-white align-middle footer g-0 fixed-bottom" role="contentinfo" id="footer">
         <div class="copywrite col-8">
-          <p aria-label="copywrite information">© Copywrite 2024</p>
+          <p>© Copywrite 2024</p>
         </div>
         <div class="col-4">
           <div class="d-flex gap-4 justify-content-end">
