@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="https://use.typekit.net/bng1uel.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-primary" role="navigation">
+    <ul class="skip-links">
+      <li><a href="#navigation">Skip to main nav</a></li>
+      <li><a href="#about">Skip to about</a></li>
+      <li><a href="#mission">Skip to mission statement</a></li>
+      <li><a href="#footer">Skip to footer</a></li>
+    </ul>
+    <nav class="navbar navbar-expand-lg bg-primary" id="navigation">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img width="200" src="images/logotype.png" alt="mode graphic design solutions logo type"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,24 +35,24 @@
       </div>
     </nav>
     <main>
-      <div class="about row g-0"  aria-label="about information">
+      <div class="about row g-0">
         <picture class="col-lg-8 ">
-          <source srcset="images/me-small.jpg" media="(max-width: 768px)" alt="">
-        <img class="banner-img"  src="images/me-large.jpg" alt="jessica radul" width="100%">
+          <source srcset="images/me-small.jpg" media="(max-width: 768px)">
+        <img class="banner-img"  src="images/me-large.jpg" alt="jessica radul">
       </picture>
         <div class="col-lg-4 d-grid justify-content-center">
             <h1 class="about-title">About</h1>
-            <p class="p-content">Mode Graphic Design Solutions, founded by Canadian graphic designer Jessica Radul, is a creative studio dedicated to crafting clean, whimsical styles with a touch of mystique and minimalistic charm. With a passion for design that seamlessly blends creativity and functionality, Jessica established Mode with a clear mission: to bring brands to life through captivating visual identities and compelling digital experiences.</p>
+            <p class="p-content" id="about" itemscope itemtype="https://schema.org/Person"><span itemprop="brand">Mode Graphic Design Solutions</span>, founded by <span itemprop="birthPlace">Canadian</span> graphic designer <span itemprop="name">Jessica Radul</span>, is a creative studio dedicated to crafting clean, whimsical styles with a touch of mystique and minimalistic charm. With a passion for design that seamlessly blends creativity and functionality, Jessica established Mode with a clear mission: to bring brands to life through captivating visual identities and compelling digital experiences.</p>
             <img src="images/star.svg" alt="star" class="star">
             <h2 class="about-title">Mission Statement</h2>
-            <p class="p-content">At Mode Graphic Design Solutions, our mission is to blend creativity and functionality to craft captivating visual identities and digital experiences. We strive to create clean, whimsical styles with a touch of mystique, delivering designs that resonate deeply with our clients' audiences. Through meticulous attention to detail and a commitment to excellence, we aim to exceed expectations and leave a lasting impression in the hearts and minds of all who encounter our work.</p>
+            <p class="p-content" id="mission">At Mode Graphic Design Solutions, our mission is to blend creativity and functionality to craft captivating visual identities and digital experiences. We strive to create clean, whimsical styles with a touch of mystique, delivering designs that resonate deeply with our clients' audiences. Through meticulous attention to detail and a commitment to excellence, we aim to exceed expectations and leave a lasting impression in the hearts and minds of all who encounter our work.</p>
             <button id="contact-us" aria-label="contact toggle"><a href="contact.html">Contact Us</a></button>
         </div>
        
       </div>
     </main>
    
-      <footer>
+      <footer id="footer">
         <div class="row bg-dark text-white align-middle footer fixed-bottom g-0" role="contentinfo">
           <div class="copywrite col-8">
             <p>© Copywrite 2024</p>

@@ -16,10 +16,10 @@
 <body>
   <ul class="skip-links">
     <li><a href="#navigation">Skip to main nav</a></li>
-    <li><a href="#">Skip to form</a></li>
+    <li><a href="#images">Skip to portfolio images</a></li>
     <li><a href="#footer">Skip to footer</a></li>
   </ul>
-  <nav class="navbar navbar-expand-lg bg-primary" id="navigation" role="navigation">
+  <nav class="navbar navbar-expand-lg bg-primary" id="navigation">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img width="200" src="images/logotype.png" alt="mode graphic design solutions logo type"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,34 +37,34 @@
     </div>
   </nav>
   <div class="portfolio">
-    <h1 class="display-2 text-center" role="heading">Portfolio</h1>
-    <div class="portfolio-images "> 
-      <picture>
+    <h1 class="display-2 text-center">Portfolio</h1>
+    <div class="portfolio-images" id="images" itemscope itemtype="https://schema.org/CreativeWork"> 
+      <picture itemprop="workExample">
         <source srcset="images/tori-bell-square-sm.jpg" media="(max-width: 768px)"/>
         <source srcset="images/tori-bell-square.jpg" media="(min-width: 768px)"/>
         <img src="images/tori-bell-square.jpg" alt="tori bell packaging">
       </picture>
-      <picture>
+      <picture itemprop="workExample">
         <source srcset="images/stationary-square-sm.jpg" media="(max-width: 768px)"/>
         <source srcset="images/stationary-square.jpg" media="(min-width: 768px)"/>
         <img src="images/stationary-square.jpg" alt="example of stationary set">
       </picture>
-      <picture>
+      <picture itemprop="workExample">
         <source srcset="images/poster-square-sm.jpg" media="(max-width: 768px)"/>
         <source srcset="images/poster-square.jpg" media="(min-width: 768px)"/>
         <img src="images/poster-square.jpg" alt="vampire movie poster">
       </picture>
-      <picture>
+      <picture itemprop="workExample">
         <source srcset="images/jack-daniels-square-sm.jpg" media="(max-width: 768px)"/>
         <source srcset="images/jack-daniels-square.jpg" media="(min-width: 768px)"/>
         <img src="images/jack-daniels-square.jpg" alt="jack daniels packaging">
       </picture>
-      <picture>
+      <picture itemprop="workExample">
         <source srcset="images/mountain-trail-square-sm.jpg" media="(max-width: 768px)"/>
         <source srcset="images/mountain-trail-square.jpg" media="(min-width: 768px)"/>
         <img src="images/mountain-trail-square.jpg" alt="mountain trail peanut buddy bars packaging">
       </picture>
-      <picture>
+      <picture itemprop="workExample">
         <source srcset="images/a01-square-sm.jpg" media="(max-width: 768px)"/>
         <source srcset="images/a01-square.jpg" media="(min-width: 768px)"/>
         <img src="images/a01-square.jpg" alt="haunted tales and tiny shadows logo">
@@ -92,7 +92,7 @@
         </div>
       </div>
     </footer>
-  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
